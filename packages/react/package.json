@@ -1,16 +1,29 @@
 {
   "name": "microcms-field-extension-react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "dist/**"
   ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microcmsio/microcms-field-extension.git",
+    "directory": "packages/react"
+  },
+  "bugs": {
+    "url": "https://github.com/microcmsio/microcms-field-extension/issues"
+  },
   "license": "MIT",
   "scripts": {
     "build": "tsup index.ts --format esm,cjs --dts --external react",
-    "dev": "tsup index.ts --format esm,cjs --watch --dts --external react"
+    "dev": "tsup index.ts --format esm,cjs --watch --dts --external react",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/react": "18.0.8",

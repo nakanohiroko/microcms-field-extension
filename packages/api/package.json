@@ -1,17 +1,30 @@
 {
   "name": "microcms-field-extension-api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "source": "./src/index.ts",
   "files": [
     "dist/**"
   ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microcmsio/microcms-field-extension.git",
+    "directory": "packages/api"
+  },
+  "bugs": {
+    "url": "https://github.com/microcmsio/microcms-field-extension/issues"
+  },
   "license": "MIT",
   "scripts": {
     "prebuild": "rm -rf dist/",
     "build": "tsc",
-    "dev": "tsc"
+    "dev": "tsc",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "tsconfig": "*",
