@@ -61,4 +61,4 @@ https://nodejs.org/ja/blog/vulnerability/
 
 ## ライセンス
 
-このプロジェクトは MIT License のもとで公開されています。
+このプロジェクトは MIT License のもとで公開されています。 
